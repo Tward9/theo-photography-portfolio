@@ -1,11 +1,10 @@
 import React from "react";
 
-function Home(){
-
+function PhotoHolder() {
     return(
         <>
         </>
-    )
+    );
 };
 
-export default Home;
+export default PhotoHolder;

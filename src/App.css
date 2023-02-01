@@ -18,3 +18,8 @@ body{
   margin-top: -.5em;
   margin-bottom: .25em;
 }
+
+.imgBox{
+  width: 200px;
+  height: Auto;
+}

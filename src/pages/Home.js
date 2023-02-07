@@ -20,6 +20,7 @@ function Home() {
     };
     let itemArr = [];
     const [photoMount, setPhotoMount] = useState(false);
+
     useEffect(() => {
         s3.listObjects(params, function (err, data) {
             if (err) console.log(err, err.stack); // an error occurred
@@ -28,7 +29,7 @@ function Home() {
                 items.Contents.forEach(item => {
                     itemArr.push(item)
                 })
-                console.log(itemArr);
+                // console.log(itemArr);
             }
         });
         return () => {
@@ -42,9 +43,15 @@ function Home() {
         <>
             {/* <img className="imgBox" src={picture} alt="miami harbor" />
             <img className="imgBox" src={hiddenUrl} alt="miami harbor" /> */}
-            {
-                photoMount && <PhotoHolder photos={itemArr} />
-            }
+            <div>
+                {
+                    photoMount ? (
+                        <PhotoHolder pictures={itemArr} />
+                    ) : (
+                        <div>Loading...</div>
+                    )
+                }
+            </div>
         </>
     )
 };

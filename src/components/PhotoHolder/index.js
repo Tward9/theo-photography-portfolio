@@ -1,11 +1,12 @@
 import React from "react";
 
-const PhotoHolder = (({itemArr}) => {
-    console.log(itemArr);
+const PhotoHolder = (({ pictures }) => {
+    console.log(pictures);
+    
     return (
         <>
             <ul>
-                <li>TEST</li>
+                {/* {photos} */}
             </ul>
         </>
     );

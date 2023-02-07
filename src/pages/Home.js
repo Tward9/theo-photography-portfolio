@@ -37,7 +37,7 @@ function Home() {
             console.log(itemArr);
             setPhotoMount(true)
         };
-    }, []);
+    });
 
     return (
         <>

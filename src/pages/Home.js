@@ -1,7 +1,8 @@
 import React from "react";
 import PhotoHolder from "../components/PhotoHolder";
 import AWS from 'aws-sdk';
-import { ListObjectsCommand, S3Client } from '@aws-sdk/client-s3';
+import { useEffect, useState } from "react";
+
 
 function Home() {
     const s3 = new AWS.S3({
@@ -18,23 +19,31 @@ function Home() {
         MaxKeys: 10
     };
     let itemArr = [];
-    s3.listObjects(params, function (err, data) {
-        if (err) console.log(err, err.stack); // an error occurred
-        else {
-            let items = data;
-            items.Contents.forEach(item => {
-                itemArr.push(item)
-            })
+    const [photoMount, setPhotoMount] = useState(false);
+    useEffect(() => {
+        s3.listObjects(params, function (err, data) {
+            if (err) console.log(err, err.stack); // an error occurred
+            else {
+                let items = data;
+                items.Contents.forEach(item => {
+                    itemArr.push(item)
+                })
+                console.log(itemArr);
+            }
+        });
+        return () => {
+            console.log('This will be logged on unmount');
             console.log(itemArr);
-        }
-    });
-    
+            setPhotoMount(true)
+        };
+    }, []);
+
     return (
         <>
-            <img className="imgBox" src={picture} alt="miami harbor" />
-            <img className="imgBox" src={hiddenUrl} alt="miami harbor" />
+            {/* <img className="imgBox" src={picture} alt="miami harbor" />
+            <img className="imgBox" src={hiddenUrl} alt="miami harbor" /> */}
             {
-
+                photoMount && <PhotoHolder photos={itemArr} />
             }
         </>
     )

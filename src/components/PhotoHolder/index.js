@@ -13,6 +13,7 @@ const PhotoHolder = (({ pictures }) => {
         <>
             <img className="imgBox" src={`https://${process.env.REACT_APP_AWS_S3_BUCKET_NAME}.s3.${process.env.REACT_APP_AWS_S3_REGION}.amazonaws.com/${pictures[0].Key}`} alt="miami harbor" />
             <img className="imgBox" src={`https://${process.env.REACT_APP_AWS_S3_BUCKET_NAME}.s3.${process.env.REACT_APP_AWS_S3_REGION}.amazonaws.com/${pictures[1].Key}`} alt="miami harbor" />
+            
         </>
     );
 });

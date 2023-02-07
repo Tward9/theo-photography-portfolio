@@ -1,5 +1,5 @@
 import React from "react";
-import Camera from '../camera.png';
+import Camera from '../../camera.png';
 
 function Header(){
 

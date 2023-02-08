@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/theo-photography-portfolio/static/css/main.437a6ce4.css",
-    "main.js": "/theo-photography-portfolio/static/js/main.a7891679.js",
+    "main.js": "/theo-photography-portfolio/static/js/main.09fb7b87.js",
     "static/media/camera.png": "/theo-photography-portfolio/static/media/camera.8ba1c3b16e24e19dc045.png",
     "index.html": "/theo-photography-portfolio/index.html",
     "main.437a6ce4.css.map": "/theo-photography-portfolio/static/css/main.437a6ce4.css.map",
-    "main.a7891679.js.map": "/theo-photography-portfolio/static/js/main.a7891679.js.map"
+    "main.09fb7b87.js.map": "/theo-photography-portfolio/static/js/main.09fb7b87.js.map"
   },
   "entrypoints": [
     "static/css/main.437a6ce4.css",
-    "static/js/main.a7891679.js"
+    "static/js/main.09fb7b87.js"
   ]
 }

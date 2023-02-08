@@ -1,6 +1,7 @@
 {
     "name": "Life in 35mm",
     "version": "1.0.0",
+    "homepage": "https://tward9.github.io/theo-photography-portfolio/",
     "description": "Portfolio Page for Photography by Theo Ward",
     "scripts": {
         "start": "react-scripts start",

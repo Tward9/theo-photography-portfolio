@@ -4,6 +4,8 @@
     "homepage": "https://tward9.github.io/theo-photography-portfolio/",
     "description": "Portfolio Page for Photography by Theo Ward",
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
@@ -18,6 +20,7 @@
     "dependencies": {
         "@aws-sdk/client-s3": "^3.264.0",
         "aws-sdk": "^2.1306.0",
+        "gh-pages": "^5.0.0",
         "jquery": "^3.6.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",

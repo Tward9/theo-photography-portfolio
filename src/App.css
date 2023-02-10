@@ -19,7 +19,12 @@ body{
   margin-bottom: .25em;
 }
 
-.imgBox{
+.imgBoxLandscape{
+  width: 400px;
+  height: Auto;
+}
+
+.imgBoxPortrait{
   width: 300px;
   height: Auto;
 }

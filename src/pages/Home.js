@@ -14,14 +14,14 @@ function Home() {
             orient: 'landscape'
         },
         {
-            url: '57AE55C4-87E1-4F59-A033-D19B5E66C1A9.JPG',
-            alt: 'Miami Harbor Sunset',
-            orient: 'landscape'
-        },
-        {
             url: 'IMG_9585.png',
             alt: 'Sunset on the Water with Schooner',
             orient: 'portrait'
+        },
+        {
+            url: '57AE55C4-87E1-4F59-A033-D19B5E66C1A9.JPG',
+            alt: 'Miami Harbor Sunset',
+            orient: 'landscape'
         },
         {
             url: 'IMG_9594.png',
@@ -42,7 +42,7 @@ function Home() {
     
     return (
         <>
-            <div>
+            <div className="flex">
                 {
                     urlObject.map((url) => {
                         return(<Picture url={url} />)                        

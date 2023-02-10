@@ -20,11 +20,22 @@ body{
 }
 
 .imgBoxLandscape{
-  width: 400px;
-  height: Auto;
+  width: Auto;
+  height: 27em;
+  padding-top: 3em;;
 }
 
 .imgBoxPortrait{
-  width: 300px;
+  width: 25em;
   height: Auto;
+}
+/* top right bottom left */
+.margin{
+  margin: .5em 1em .5em 1em; 
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

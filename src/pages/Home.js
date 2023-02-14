@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 
 function Home() {
-    
+    const shuffle = arr => [...arr].sort(() => Math.random() - .5);
     const urlObject = [
         {
             url: '003C0484-BDF9-4E83-BF3F-795BB9913093.JPG',
@@ -38,13 +38,15 @@ function Home() {
             alt: 'Mast, Sail, and Sunset',
             orient: 'portrait'
         }
-    ]
+    ];
+
+    const displayList = shuffle(urlObject);
     
     return (
         <>
             <div className="flex">
                 {
-                    urlObject.map((url) => {
+                    displayList.map((url) => {
                         return(<Picture url={url} />)                        
                     })
                 }

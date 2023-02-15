@@ -1,7 +1,7 @@
 import React from "react";
 import Camera from '../../camera.png';
 
-function Header(){
+function Header({ currentPage, handlePageChange }){
 
     return(
         <>
@@ -12,9 +12,7 @@ function Header(){
             </div>
             <div>
                 <ul>
-                    <li>
-                        
-                    </li>
+                    
                 </ul>
             </div>
         </>

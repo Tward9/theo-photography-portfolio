@@ -10,6 +10,13 @@ function Header(){
                 <h1 className="headerTitle">Life in 35mm</h1>
                 <h5 className="headerTitle">Photography by Theo</h5>
             </div>
+            <div>
+                <ul>
+                    <li>
+                        
+                    </li>
+                </ul>
+            </div>
         </>
     )
 };

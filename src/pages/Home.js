@@ -1,5 +1,4 @@
 import React from "react";
-import PhotoHolder from "../components/PhotoHolder";
 import Picture from "../components/Picture";
 import AWS from 'aws-sdk';
 import { useEffect, useState } from "react";

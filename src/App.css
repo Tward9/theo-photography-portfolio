@@ -41,15 +41,23 @@ body{
 }
 
 .headerSpace{
-  margin-top: 15em;
+  margin-top: 12em;
+  margin-bottom: -11em;
 }
 
 .fixed{
   position: fixed;
-  height: 15em;
-  margin-left: 40%;
+  margin-left: 43.25%;
 }
 
 .nav{
   list-style: none;
+  display: flex;
+  position: fixed;
+  top: 8.25em;
+  left: 80%;
+}
+
+.nav-item{
+  padding-left: 1em;
 }

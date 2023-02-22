@@ -13,7 +13,7 @@ function Header({ currentPage, handlePageChange }) {
                 </div>
                 <div>
                     <ul className="nav">
-                        <li>
+                        <li className="nav-item">
                             <a
                                 href="#Home"
                                 onClick={() => handlePageChange('Home')}
@@ -21,7 +21,7 @@ function Header({ currentPage, handlePageChange }) {
                                 Home
                             </a>
                         </li>
-                        <li>
+                        <li className="nav-item">
                             <a
                                 href="#Series"
                                 onClick={() => handlePageChange('Series')}

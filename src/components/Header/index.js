@@ -1,19 +1,36 @@
 import React from "react";
 import Camera from '../../camera.png';
 
-function Header({ currentPage, handlePageChange }){
+function Header({ currentPage, handlePageChange }) {
 
-    return(
+    return (
         <>
-            <div className="headerGroup">
-                <img src={Camera} className='headerPhoto' alt='Camera'/>
-                <h1 className="headerTitle">Life in 35mm</h1>
-                <h5 className="headerTitle">Photography by Theo</h5>
-            </div>
-            <div>
-                <ul>
-                    
-                </ul>
+            <div className="fixed">
+                <div className="headerGroup">
+                    <img src={Camera} className='headerPhoto' alt='Camera' />
+                    <h1 className="headerTitle">Life in 35mm</h1>
+                    <h5 className="headerTitle">Photography by Theo</h5>
+                </div>
+                <div>
+                    <ul className="nav">
+                        <li>
+                            <a
+                                href="#Home"
+                                onClick={() => handlePageChange('Home')}
+                            >
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#Series"
+                                onClick={() => handlePageChange('Series')}
+                            >
+                                Series
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </>
     )

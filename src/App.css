@@ -39,3 +39,17 @@ body{
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.headerSpace{
+  margin-top: 15em;
+}
+
+.fixed{
+  position: fixed;
+  height: 15em;
+  margin-left: 40%;
+}
+
+.nav{
+  list-style: none;
+}

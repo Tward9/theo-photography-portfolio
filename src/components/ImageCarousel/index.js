@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Carousel } from 'react-responsive-carousel';
 import Picture from '../Picture';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const ImageCarousel = ({ urls }) => {
     const urlArr = urls
@@ -12,22 +13,19 @@ const ImageCarousel = ({ urls }) => {
 
     return (
         <>
-            <Carousel>
-                {/* {
-                    urlArr.map((url) => {
-                        return (
-                            <>
-                                <Carousel.Item>
-                                    <Picture url={url} />
-                                    <Carousel.Caption>
-                                        <h4>{url.alt}</h4>
-                                    </Carousel.Caption>
-                                </Carousel.Item>
-                            </>
-                        )
-                    })
-                } */}
-            </Carousel>
+            <div className=''>
+                <Carousel>
+                    {
+                        urlArr.map((url) => {
+                            return (
+                                <>
+                                    {/* <Picture url={url} /> */}
+                                </>
+                            )
+                        })
+                    }
+                </Carousel>
+            </div>
         </>
     )
 }

@@ -12,7 +12,7 @@ const ImageCarousel = ({ urls }) => {
 
     return (
         <>
-            <Carousel activeIndex={index} onSelect={handleSelect}>
+            <Carousel>
                 {/* {
                     urlArr.map((url) => {
                         return (
@@ -27,7 +27,6 @@ const ImageCarousel = ({ urls }) => {
                         )
                     })
                 } */}
-
             </Carousel>
         </>
     )

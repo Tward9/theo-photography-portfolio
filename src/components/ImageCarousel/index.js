@@ -22,7 +22,7 @@ const ImageCarousel = ({ urls }) => {
                 <button className='button' onClick={handlePrevious}>&#8592;</button>
                 <Picture url={urlArr[index]} />
                 <button className='button' onClick={handleNext}>&#8594;</button>
-                <h3 className='caption'>{urlArr[index].alt}</h3>
+                <h3 className='caption'>{urlArr[index].series}</h3>
             </div>
         </>
     )

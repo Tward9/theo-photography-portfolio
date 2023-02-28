@@ -40,6 +40,11 @@ body{
   justify-content: center;
 }
 
+.carouselFlex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .headerSpace{
   margin-top: 12em;
   margin-bottom: -11em;
@@ -62,4 +67,20 @@ body{
 
 .nav-item{
   padding-left: 1em;
+}
+
+.button{
+  margin-top: 35em;
+  height: 2em;
+}
+
+.portraitSeries{
+  margin-left: 6em;
+}
+
+.caption{
+  width: 100%;
+  margin-top: 9em;
+  margin-bottom: -8em;
+  margin-left: 3em;
 }

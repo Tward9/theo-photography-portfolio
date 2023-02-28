@@ -39,6 +39,7 @@ function Series() {
     return (
         <>
             <ImageCarousel urls={miamiHarborURLs} />
+            <ImageCarousel urls={sunsetCruiseURLS} />
         </>
     )
 };
